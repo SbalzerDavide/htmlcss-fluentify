@@ -13,8 +13,25 @@ body{
 
 /* UTILITIES */
 /* typography */
+h1,
+h2,
+h3 {
+  font-weight: 500;
+}
 
+h2{
+  color: #000;
+  font-size: 28px;
+  line-height: 1.5;
+}
 
+h3{
+  font-size: 25px;
+  color: #7cbb02;
+}
+.text-align{
+  text-align: center;
+}
 
 /* layout */
 .container{
@@ -32,11 +49,9 @@ body{
   float:left;
 }
 
-
-/* menu */
-
-
-
+.width-50{
+  width: 50%;
+}
 
 /* buttons */
 .btn{
@@ -54,18 +69,22 @@ body{
   border: none;
 }
 
-
-
+.btn-big{
+  padding: 20px;
+}
 
 /* HEADER */
 header{
   background: #0c325a;
-  line-height: 80px;
   font-size: 12px;
   height: 580px;
 }
 
 /* nav */
+header nav{
+  line-height: 80px;
+}
+
 nav .nav-logo{
   width: 15%;
 }
@@ -105,15 +124,49 @@ nav li:last-child{
 
 /* jumbotron */
 header .jumbotron{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+header .container.relative{
   background-image: url('../img/background-header.png');
-  background-size: 1000px;
+  background-size: 900px;
   background-repeat: no-repeat;
   background-position: bottom right;
   height: 500px;
+  position: relative;
 }
 
+.jumbotron h1{
+  color: #fff;
+  font-size: 40px;
+  line-height: 60px;
+  margin-bottom: 20px;
+}
 
+/* MAIN */
+/* presentation */
+main .presentation {
+  height: 130px;
+  background: #d3d3d3;
+  padding: 30px 10px;
+}
 
+main .presentation p{
+  font-size: 18px;
+}
+
+/* course */
+main .course .col{
+  float: left;
+  width: calc(100%/3);
+  padding: 20px;
+}
+
+.course .col img{
+  height: 150px;
+}
 
 
   /*
