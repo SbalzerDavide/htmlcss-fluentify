@@ -232,13 +232,26 @@ footer{
   background: #d3d3d3;
   padding: 50px 0;
 }
-footer li{
+
+footer .right .footer-right{
   display: inline-block;
-  padding: 0 20px;
+  margin: 0 20px;
+}
+
+footer .right>div:nth-child(2){
+  border-bottom: 1px solid #808080;
+  width: 150px;
+  text-align:left;
 }
 
 footer .right{
     text-align: right;
+    line-height: 10px;
+}
+
+footer .right .seleziona{
+  width: 150px;
+  padding: 0;
 }
 
 
