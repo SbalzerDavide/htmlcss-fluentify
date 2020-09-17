@@ -9,6 +9,8 @@ body{
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   color: #808080;
+  position: relative;
+  top: 80px;
 }
 
 /* UTILITIES */
@@ -25,9 +27,8 @@ h2{
   line-height: 1.5;
 }
 
-h2 .big{
-  font-size: 35px;
-
+h2.big{
+  font-size: 32px;
 }
 
 h3{
@@ -98,7 +99,14 @@ header{
 /* nav */
 header nav{
   line-height: 80px;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  z-index: 2;
+  background-color: inherit;
 }
+
 
 nav .nav-logo{
   width: 15%;
@@ -118,7 +126,8 @@ header nav img{
   width: 90px;
 }
 
-header a{
+header a,
+footer a{
   text-decoration: none;
   text-transform: uppercase;
   color: white;
@@ -174,7 +183,7 @@ main .presentation p{
 
 /* course */
 main .course{
-  border-bottom: 1px solid #808080;
+  position: relative;
 }
 
 main .course .col{
@@ -197,6 +206,18 @@ main .course .col{
   display: block;
 }
 
+main .course::after{
+  content: '';
+  width: 125%;
+  height: 1px;
+  background: #808080;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
 /* program */
 main .program-col{
   padding: 30px 80px;
@@ -209,5 +230,43 @@ main .program-col p{
 /* FOOTER */
 footer{
   background: #d3d3d3;
-  height: 100px;
+  padding: 50px 0;
+}
+footer li{
+  display: inline-block;
+  padding: 0 20px;
+}
+
+footer .right{
+    text-align: right;
+}
+
+
+
+/* HELP */
+.help{
+  position: fixed;
+  bottom: 0;
+  right: 20%;
+}
+
+.help a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 38px;
+  background-color: #7cbb02;
+  border-radius: 5px 5px 0 0;
+  padding: 10px;
+}
+
+
+
+.background-nav{
+  width: 200%;
+  height: 80px;
+  background-color: #0c325a;
+  position: fixed;
+  top: 0;
+  z-index: 1;
 }
