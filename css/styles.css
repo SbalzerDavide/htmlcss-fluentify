@@ -249,6 +249,16 @@ footer .right{
     line-height: 10px;
 }
 
+footer .right .seleziona-r,
+footer .right .seleziona-l{
+  display: inline-block;
+}
+
+footer .right .seleziona-r{
+  position: relative;
+  left: 67px;
+}
+
 footer .right .seleziona{
   width: 150px;
   padding: 0;
@@ -260,7 +270,7 @@ footer .right .seleziona{
 .help{
   position: fixed;
   bottom: 0;
-  right: 20%;
+  right: 184px;
 }
 
 .help a{
