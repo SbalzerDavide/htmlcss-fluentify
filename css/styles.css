@@ -25,10 +25,25 @@ h2{
   line-height: 1.5;
 }
 
+h2 .big{
+  font-size: 35px;
+
+}
+
 h3{
   font-size: 25px;
   color: #7cbb02;
+  line-height: 30px;
 }
+
+p{
+  line-height: 25px;
+}
+
+a {
+    color: #5586bc;
+}
+
 .text-align{
   text-align: center;
 }
@@ -158,19 +173,41 @@ main .presentation p{
 }
 
 /* course */
+main .course{
+  border-bottom: 1px solid #808080;
+}
+
 main .course .col{
   float: left;
   width: calc(100%/3);
-  padding: 20px;
+  padding: 30px;
 }
 
 .course .col img{
   height: 150px;
+  margin-bottom: 20px;
 }
 
+.course .col h3::after{
+  content: '';
+  width: 25%;
+  height: 1px;
+  background-color: #808080;
+  margin: 30px auto;
+  display: block;
+}
 
-  /*
-#808080
-color: #5586bc
+/* program */
+main .program-col{
+  padding: 30px 80px;
+}
 
-background: #7cbb02 */
+main .program-col p{
+  margin: 20px 0;
+}
+
+/* FOOTER */
+footer{
+  background: #d3d3d3;
+  height: 100px;
+}
