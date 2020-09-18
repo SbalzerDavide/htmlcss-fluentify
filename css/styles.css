@@ -45,6 +45,10 @@ a {
     color: #5586bc;
 }
 
+a:hover{
+  color: #0c325a;
+}
+
 .text-align{
   text-align: center;
 }
@@ -80,9 +84,17 @@ a {
   line-height: 25px;
 }
 
+.btn:not(.btn-green):hover{
+  color:#7cbb02;
+  border: 1px solid #7cbb02;
+}
+
 .btn-green{
   background-color: #7cbb02;
   border: none;
+}
+.btn-green:hover{
+  color: #0c325a;
 }
 
 .btn-big{
@@ -110,6 +122,9 @@ header nav{
   background-color: inherit;
 }
 
+header nav a:not(.btn):hover{
+  color: #808080;
+}
 
 nav .nav-logo{
   width: 15%;
@@ -282,7 +297,9 @@ footer .right .seleziona{
   padding: 10px;
 }
 
-
+.help a:hover{
+  color: #0c325a;
+}
 
 .background-nav{
   width: 200%;
