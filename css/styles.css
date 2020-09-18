@@ -93,7 +93,10 @@ a {
 header{
   background: #0c325a;
   font-size: 12px;
-  height: 580px;
+  background-image: url('../img/background-header.png');
+  background-size: 1000px;
+  background-repeat: no-repeat;
+  background-position: bottom right;
 }
 
 /* nav */
@@ -154,11 +157,7 @@ header .jumbotron{
 }
 
 header .container.relative{
-  background-image: url('../img/background-header.png');
-  background-size: 900px;
-  background-repeat: no-repeat;
-  background-position: bottom right;
-  height: 500px;
+  height: 580px;
   position: relative;
 }
 
